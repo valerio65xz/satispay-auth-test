@@ -113,7 +113,8 @@ public class SatispayController {
             String privateKeyString = new String(Files.readAllBytes(new File(privateKeyPath).toPath()), Charset.defaultCharset());
             String parsedPrivateKey = privateKeyString.replaceAll("-----END PRIVATE KEY-----", "")
                     .replaceAll("-----BEGIN PRIVATE KEY-----", "")
-                    .replaceAll("\n", "");
+                    .replaceAll("\n", "")
+                    .replaceAll("\r", "");
 
             byte[] decodedPrivateKey = Base64.getDecoder().decode(parsedPrivateKey);
             PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(decodedPrivateKey);
