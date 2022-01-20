@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.satispay.auth.satispayauthtest.exception","l":"ErrorCode"},{"p":"com.satispay.auth.satispayauthtest","l":"SatispayAuthTestApplication"},{"p":"com.satispay.auth.satispayauthtest.controller","l":"SatispayController"},{"p":"com.satispay.auth.satispayauthtest.exception","l":"SatispayException"}]

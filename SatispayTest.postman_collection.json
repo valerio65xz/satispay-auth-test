@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "739a20e4-f4dd-4af7-95a2-d83d4a5ea520",
+		"name": "SatispayTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Call Authenticate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"flow\": \"MATCH_CODE\",\r\n  \"amount_unit\": 100,\r\n  \"currency\": \"EUR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/satispay/authenticate?type=POST",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"satispay",
+						"authenticate"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "POST"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
